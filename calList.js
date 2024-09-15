@@ -39,11 +39,13 @@ function addTask(name,dueDate,priority,notes)
 
 function printTask()
         {
+            output = ""; 
             for (let i=0, len = List.length; i < len;)
             {
                 output = output + "<br><br>" + List[i].taskName + "<br>" + List[i].taskDueDate + "<br>" + List[i].taskPriority + "<br>" + List[i].taskNotes + "<br>" + List[i].taskStatus;
                 i++; 
             }
+            let clear = ""; 
             document.getElementById("Task-List").innerHTML = output;
             
         }
