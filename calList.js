@@ -44,8 +44,7 @@ function printTask()
             {
                 output = output + "<br><br>" + List[i].taskName + "<br>" + List[i].taskDueDate + "<br>" + List[i].taskPriority + "<br>" + List[i].taskNotes + "<br>" + List[i].taskStatus;
                 i++; 
-            }
-            let clear = ""; 
+            } 
             document.getElementById("Task-List").innerHTML = output;
             
         }
